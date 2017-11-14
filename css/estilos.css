@@ -14,6 +14,11 @@ body {
 	min-width: 150px;
 	padding: 20px;
 }
+
+.c1, .c2, .c3, .c4, .c5 {
+width: 100%;
+}
+
 .c1 {
 	color: black;
 	background-color: #E6EBE0;
@@ -46,3 +51,23 @@ body {
 	flex-flow: row wrap;
 }
 
+/*Crea el estilo para tabletas y desktop
+ colocando c1 al 25% y c4 al 75%.*/
+@media (min-width: 600px) {
+.c1 {
+width: 25%;
+}
+
+.c4 {
+width: 75%;
+}
+}
+
+/*Crea el estilo para desktop colocando el ancho a 800px.*/
+@media (min-width: 800px) {
+.container {
+width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+}
